@@ -6,6 +6,8 @@ body {
 body .nav_hamburger {
   position: fixed;
   z-index: 5;
+  background-color: rgba(255, 0, 0, 0);
+  border: 3px dashed #939699;
 }
 
 body .nav_hamburger #header {
@@ -154,6 +156,7 @@ body .nav_hamburger #menu .menu-footer ul li {
 }
 
 body .nav_hamburger #menu .menu-footer a {
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -177,7 +180,6 @@ body .nav_hamburger .toggle-menu {
 body .nav_hamburger .toggle-menu span {
   background-color: #fff;
   content: "";
-  display: block;
   height: 2px;
   left: calc(50% - 13px);
   position: absolute;
@@ -249,6 +251,7 @@ body .cid-rTpW4eKEc3 {
       -ms-flex-align: center;
           align-items: center;
   background-color: gray;
+  z-index: 4;
 }
 
 body .cid-rTpW4eKEc3 .mbr-figure {
@@ -583,4 +586,4 @@ body .pagetop_footer .footer_container .footer_copyright {
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=index_style.css.map */
+/*# sourceMappingURL=index_style_v01.css.map */
