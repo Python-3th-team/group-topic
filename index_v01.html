@@ -26,22 +26,58 @@
 </head>
 
 <body>
-    <section class="nav_hamburger menu cid-rTc7EbAIji" once="menu" id="">
-        <div class="menu-section">
-            <div class="menu-toggle">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-            </div>
-            <nav>
-                <ul role="navigation" class="hidden ">
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">resume</a></li>
-                    <li><a href="#">contact</a></li>
+    <section class=" 
+    nav_hamburger menu cid-rTc7EbAIji" once="menu" id="">
+        <header id="header">
+            <nav class="nav">
+                <button class="toggle-menu">
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+
+        <div id="menu" class="">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </nav>
+
+            <footer class="menu-footer">
+                <nav class="footer-nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter fa-fw"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-envelope fa-fw"></i>
+                                Subscribe
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
         </div>
+
 
 
     </section>
@@ -112,12 +148,8 @@
             </div>
         </div>
     </section>
-    <div id="scrollToTop" class="scrollToTop mbr-arrow-up">
-        <a style="text-align: center;">
-            <i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up">
-            </i>
-        </a>
-    </div>
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
+                class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 
 
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
@@ -133,11 +165,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <script>
-        $(".menu-toggle").on('click', function () {
-            $(this).toggleClass("on");
-            $('.menu-section').toggleClass("on");
-            $("nav ul").toggleClass('hidden');
-            $(".pagetop_footer , .cid-rTpW4eKEc3 , .mbr-section").toggle();
+        $('.toggle-menu').click(function () {
+            $(this).toggleClass('active');
+            $('#menu').toggleClass('open');
+            $('.cid-rTpW4eKEc3').toggle();
+            $('.mbr-section').toggle();
+            $('.pagetop_footer').toggle();
         });
     </script>
 
