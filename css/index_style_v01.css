@@ -430,7 +430,7 @@ body .cid-rTpW4eKEc3 .mbr-figure .banner_restaurant:hover .restaurant_logo {
   transition: 0.8s linear;
 }
 
-body .mbr-section {
+body .white_section {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -441,7 +441,7 @@ body .mbr-section {
           justify-content: center;
 }
 
-body .mbr-section .container {
+body .white_section .white_containercontainer {
   width: 100%;
   height: 100vh;
 }
