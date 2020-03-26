@@ -1,17 +1,20 @@
-@charset "UTF-8";
 body {
   margin: 0;
+  position: relative;
 }
 
 body .nav_hamburger {
-  position: fixed;
   z-index: 5;
   background-color: rgba(255, 0, 0, 0);
-  border: 3px dashed #939699;
+  position: relative;
 }
 
 body .nav_hamburger #header {
   padding: 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000;
 }
 
 body .nav_hamburger #menu {
@@ -250,7 +253,9 @@ body .cid-rTpW4eKEc3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: gray;
+  background-image: url(../img/6e319cc5fd338dcbbcbd3b4219907849.jpg);
+  background-position: center;
+  background-size: cover;
   z-index: 4;
 }
 
@@ -277,7 +282,7 @@ body .cid-rTpW4eKEc3 .mbr-figure .banner_plant {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-image: url(../img/環境01.jpg);
+  background-image: url(../img/83498394_2983421545025805_643096925087727616_n.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transition: 2s;
@@ -319,7 +324,7 @@ body .cid-rTpW4eKEc3 .mbr-figure .banner_plant .banner_mask {
 
 body .cid-rTpW4eKEc3 .mbr-figure .banner_plant .banner_mask .banner_plantTitle {
   font-size: 32px;
-  color: white;
+  color: gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,7 +359,7 @@ body .cid-rTpW4eKEc3 .mbr-figure .banner_restaurant {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-image: url(../img/環境03.jpg);
+  background-image: url(../img/29472173_1825757644125540_4426064296467759104_o.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transition: 2s;
@@ -396,7 +401,7 @@ body .cid-rTpW4eKEc3 .mbr-figure .banner_restaurant .banner_mask {
 
 body .cid-rTpW4eKEc3 .mbr-figure .banner_restaurant .banner_mask .banner_restaurantTitle {
   font-size: 32px;
-  color: white;
+  color: gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,7 +573,8 @@ body .pagetop_footer .footer_container .footer_contact .address {
 
 body .pagetop_footer .footer_container .white_line {
   width: 100%;
-  border-top: solid whitesmoke 2px;
+  border-bottom: solid whitesmoke 2px;
+  margin: 12px 0;
 }
 
 body .pagetop_footer .footer_container .footer_copyright {
