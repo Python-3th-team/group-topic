@@ -1,16 +1,19 @@
 body {
   margin: 0;
-
+  position: relative;
+  
   .nav_hamburger {
     // width: 100%;
-    position: fixed;
     z-index: 5;
     background-color: rgba(255, 0, 0, 0);
-    border:3px dashed #939699;
-
+    // border: 3px dashed #939699;
+    position: relative;
     #header {
-      padding: 2rem;
-      
+     padding: 2rem;
+     position: fixed;
+     top: 0;
+     right: 0;
+     z-index: 2000;
     }
 
     // It actually starts here
@@ -154,6 +157,7 @@ body {
         transform-origin: 50% 50%;
         transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
         width: 26px;
+       
 
         &:before,
         &:after {
@@ -205,7 +209,10 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: gray;
+    // background-color: gray;
+    background-image: url(../img/6e319cc5fd338dcbbcbd3b4219907849.jpg);
+    background-position: center;
+    background-size: cover;
     z-index: 4;
 
     .mbr-figure {
@@ -234,7 +241,7 @@ body {
         width: 40%;
         height: 100%;
         flex: 1;
-        background-image: url(../img/環境01.jpg);
+        background-image: url(../img/83498394_2983421545025805_643096925087727616_n.jpg);
         background-size: cover;
         background-position: center;
         transition: 2s;
@@ -264,7 +271,7 @@ body {
 
           .banner_plantTitle {
             font-size: 32px;
-            color: white;
+            color: gray;
             display: flex;
             writing-mode: vertical-rl;
             transition: 2s;
@@ -286,7 +293,7 @@ body {
         width: 40%;
         height: 100%;
         flex: 1;
-        background-image: url(../img/環境03.jpg);
+        background-image: url(../img/29472173_1825757644125540_4426064296467759104_o.jpg);
         background-size: cover;
         background-position: center;
         transition: 2s;
@@ -315,7 +322,7 @@ body {
           justify-content: flex-start;
           .banner_restaurantTitle {
             font-size: 32px;
-            color: white;
+            color: gray;
             display: flex;
             writing-mode: vertical-rl;
             transition: 2s;
@@ -441,7 +448,8 @@ body {
       }
       .white_line {
         width: 100%;
-        border-top: solid whitesmoke 2px;
+        border-bottom: solid whitesmoke 2px;
+        margin: 12px 0;
       }
       .footer_copyright {
         width: 100%;
