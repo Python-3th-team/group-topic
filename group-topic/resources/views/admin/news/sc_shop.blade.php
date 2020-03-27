@@ -24,48 +24,6 @@
 <body>
 
 
-    <!-- <div class="navbar">
-            <div class="nav_container container">
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="#calendar_container">營業時間</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sec_container">微光輕食</a>
-                </li>
-                <a href="">
-                    <div class="cy_logo d-flex justify-content-center">
-                        <div>
-                            <img src="./img/sc_logo.svg" alt="">
-                        </div>
-                    </div>
-                </a>
-                <li class="nav-item">
-                    <a class="nav-link" href="#card_container">寓所小品</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#footer">聯絡我們</a>
-                </li>
-                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 341.333 341.333"
-                    style="enable-background:new 0 0 341.333 341.333;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <rect y="277.333" width="341.333" height="42.667" />
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect y="149.333" width="341.333" height="42.667" />
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <rect y="21.333" width="341.333" height="42.667" />
-                        </g>
-                </svg>
-            </div>
-
-        </div> -->
     <header>
         <div class="banner drop-shadow d-flex flex-column">
 
@@ -153,30 +111,7 @@
                             @endforeach
                         </thead>
 
-                        {{-- <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter1">
-                            <div>2020/03/26</div>
-                            <div class="news_list"> 青山依舊在，幾度夕陽紅
-                                ...慣看相逢，浪花淘。</div>
-                            <div>▶</div>
-                        </div>
-                        <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter2">
-                            <div>2020/03/26</div>
-                            <div class="news_list"> 青山依舊在，幾
-                                ...慣看秋月春風。一壺濁逢，浪花淘。</div>
-                            <div>▶</div>
-                        </div>
-                        <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter3">
-                            <div>2020/03/26</div>
-                            <div class="news_list"> 青山依舊在，幾度夕陽紅
-                                ...慣看秋月春風逢，浪花淘。</div>
-                            <div>▶</div>
-                        </div>
-                        <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter4">
-                            <div>2020/03/26</div>
-                            <div class="news_list"> 青山依舊在，幾度夕陽紅
-                                ...慣看秋，浪花淘。</div>
-                            <div>▶</div>
-                        </div> --}}
+
                     </div>
                     <div class="news_link">
                         <span class="line-T"></span>
@@ -184,98 +119,7 @@
                         <span class="line-B"></span>
                     </div>
                 </div>
-                {{-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <!-- <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
-                          <button type="button" class="close" data-dismiss="modal" >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div> -->
-                            <div class="modal-body">
-                                <img width="100%" src="/img/12697103_1710341725868053_7700827126521991776_o.jpg" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <div data-dismiss="modal">Close</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-                {{-- <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <!-- <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
-                          <button type="button" class="close" data-dismiss="modal" >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div> -->
-                            <div class="modal-body">
-                                <img width="100%" src="/img/sc_shop/news1.jpg" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <div data-dismiss="modal">Close</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <!-- <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
-                          <button type="button" class="close" data-dismiss="modal" >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div> -->
-                            <div class="modal-body">
-                                <img width="100%" src="/img/sc_shop/news2.jpg" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <div data-dismiss="modal">Close</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <!-- <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
-                          <button type="button" class="close" data-dismiss="modal" >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div> -->
-                            <div class="modal-body">
-                                <img width="100%" src="/img/sc_shop/news3.jpg" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <div data-dismiss="modal">Close</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <!-- <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
-                          <button type="button" class="close" data-dismiss="modal" >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div> -->
-                            <div class="modal-body">
-                                <img width="100%" src="/img/sc_shop/news4.jpg" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <div data-dismiss="modal">Close</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
-
         </div>
     </section>
     <section>
