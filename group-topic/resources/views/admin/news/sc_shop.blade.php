@@ -13,83 +13,299 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+    <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- aos.js -->
     <link rel="stylesheet" href="./scss/sc_shop.css">
 
-
 </head>
 
 <body>
-    <header class="banner drop-shadow">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="#calendar_container">營業時間</a>
-            </li>
-            <li class="nav-item">
 
-                <a class="nav-link" href="#sec_container">微光輕食</a>
-            </li>
-            <li class="nav-item">
 
-                <a class="nav-link" href="#card_container">寓所小品</a>
-            </li>
-            <li class="nav-item">
+    <!-- <div class="navbar">
+            <div class="nav_container container">
 
-                <a class="nav-link" href="#footer">聯絡我們</a>
-            </li>
-        </ul>
-        <div class="cy_logo d-flex justify-content-center">
-            <div>
-                <img src="./img/sc_logo.svg" alt="">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#calendar_container">營業時間</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec_container">微光輕食</a>
+                </li>
+                <a href="">
+                    <div class="cy_logo d-flex justify-content-center">
+                        <div>
+                            <img src="./img/sc_logo.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#card_container">寓所小品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">聯絡我們</a>
+                </li>
+                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 341.333 341.333"
+                    style="enable-background:new 0 0 341.333 341.333;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <rect y="277.333" width="341.333" height="42.667" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <rect y="149.333" width="341.333" height="42.667" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <rect y="21.333" width="341.333" height="42.667" />
+                        </g>
+                </svg>
             </div>
-        </div>
-    </header>
 
-    <section>
-        <div class="calendar_container  d-flex justify-content-center" id="calendar_container">
-            <div class="content  box-shadow container">
-                <div class="row d-flex">
-                    <div class="note col-12 col-xl-12 d-flex ">
-                        <div class="note_box col-12 d-flex" >
-                        <h3>情報更新</h3>
-                        <thead>
-                            @foreach ($news_data as $item)
-                                <tr>
+        </div> -->
+    <header>
+        <div class="banner drop-shadow d-flex flex-column">
 
-                                <a href="/sc_shop_detail/{{$item->id}}"><li>{{$item->date}} {{$item->title}}</li></a>
+            <div class="navbar">
+                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 341.333 341.333"
+                    style="enable-background:new 0 0 341.333 341.333;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <rect y="277.333" width="341.333" height="42.667" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <rect y="149.333" width="341.333" height="42.667" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <rect y="21.333" width="341.333" height="42.667" />
+                        </g>
+                </svg>
+                <div class="nav_container container px-0">
 
-                                <i class="icon icon-arrow-go"></i>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#calendar_container">營業時間</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sec_container">微光輕食</a>
+                    </li>
+                    <a href="">
+                        <div class="cy_logo d-flex justify-content-center">
+                            <div>
+                                <img src="./img/sc_logo.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card_container">寓所小品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">聯絡我們</a>
+                    </li>
 
-                            </tr>
-                            @endforeach
-                        </thead>
-                    </div>
+                </div>
 
-
-                    </div>
-
+            </div>
+            <div class="calendar_container container">
+                <div class="calendar">
+                    <img src="/img/calendar.jpg" alt="">
                 </div>
             </div>
         </div>
-    </section>
+
+    </header>
+
     <section>
-        <div class="sec_background_top d-flex">
-            <div class="product_bg_L"></div>
-            <div class="product_bg_R"></div>
+        <div class="news_container">
+            <div class="container">
+                <div class="news_content">
+                    <div class="news_title">情報更新</div>
+                    <div class="news_title_btm">
+
+
+                        <thead>
+                            @foreach ($news_data as $item)
+                            <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter{{$item->id}}">
+
+                                <div>{{$item->date}}</div>
+                                <div class="news_list">{{$item->title}}</div>
+                                <div >▶</div>
+                            </div>
+                            <div class="modal fade" id="exampleModalCenter{{$item->id}}" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <img width="100%" src="{{$item->img}}" alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div data-dismiss="modal">Close</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </thead>
+
+                        {{-- <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter1">
+                            <div>2020/03/26</div>
+                            <div class="news_list"> 青山依舊在，幾度夕陽紅
+                                ...慣看相逢，浪花淘。</div>
+                            <div>▶</div>
+                        </div>
+                        <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter2">
+                            <div>2020/03/26</div>
+                            <div class="news_list"> 青山依舊在，幾
+                                ...慣看秋月春風。一壺濁逢，浪花淘。</div>
+                            <div>▶</div>
+                        </div>
+                        <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter3">
+                            <div>2020/03/26</div>
+                            <div class="news_list"> 青山依舊在，幾度夕陽紅
+                                ...慣看秋月春風逢，浪花淘。</div>
+                            <div>▶</div>
+                        </div>
+                        <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter4">
+                            <div>2020/03/26</div>
+                            <div class="news_list"> 青山依舊在，幾度夕陽紅
+                                ...慣看秋，浪花淘。</div>
+                            <div>▶</div>
+                        </div> --}}
+                    </div>
+                    <div class="news_link">
+                        <span class="line-T"></span>
+                        <div class="text">查看更多</div>
+                        <span class="line-B"></span>
+                    </div>
+                </div>
+                {{-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <!-- <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                          <button type="button" class="close" data-dismiss="modal" >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div> -->
+                            <div class="modal-body">
+                                <img width="100%" src="/img/12697103_1710341725868053_7700827126521991776_o.jpg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <div data-dismiss="modal">Close</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
+                {{-- <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <!-- <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                          <button type="button" class="close" data-dismiss="modal" >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div> -->
+                            <div class="modal-body">
+                                <img width="100%" src="/img/sc_shop/news1.jpg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <div data-dismiss="modal">Close</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <!-- <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                          <button type="button" class="close" data-dismiss="modal" >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div> -->
+                            <div class="modal-body">
+                                <img width="100%" src="/img/sc_shop/news2.jpg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <div data-dismiss="modal">Close</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <!-- <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                          <button type="button" class="close" data-dismiss="modal" >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div> -->
+                            <div class="modal-body">
+                                <img width="100%" src="/img/sc_shop/news3.jpg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <div data-dismiss="modal">Close</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <!-- <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                          <button type="button" class="close" data-dismiss="modal" >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div> -->
+                            <div class="modal-body">
+                                <img width="100%" src="/img/sc_shop/news4.jpg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <div data-dismiss="modal">Close</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
+            </div>
+
         </div>
     </section>
     <section>
-        <div class="sec_container d-flex container-fluid" id="sec_container">
+        <div class="sec_background_top ">
+            <div class="product_bg_T"></div>
+        </div>
+    </section>
+    <section>
+        <div class="sec_container  container-fluid" id="sec_container">
             <div class="container">
                 <div class="sec_position_btm container d-flex justify-content-end" data-aos="fade-left">
                     <div class="col-xl-3 d-flex align-items-center px-0">
                         <!-- 設定一個空格來撐位置 -->
                     </div>
                     <div class="sec_position_btm_list container d-flex col-12 col-xl-9">
-                        <div class="col-8 d-flex flex-column">
+                        <div class="d-flex flex-column">
                             <h4>開放式三明治 Open-Faced Sandwich</h4>
                             <p>細磨全麥麵粉搭配自陪葡萄酵母製成高纖麵包，健康好消化</p>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
+                            <span>180&emsp;&emsp;烘烤番茄</span>
                             <span>180&emsp;&emsp;烘烤番茄</span>
                             <span>180&emsp;&emsp;烘烤番茄</span>
                             <span>180&emsp;&emsp;烘烤番茄</span>
@@ -107,24 +323,151 @@
                             <img src="./img/food1.jpg" alt="">
                         </div>
                     </div>
-
                 </div>
-
-                <!-- <div class="sec_position_top d-flex flex-column col-md-1" data-aos="zoom-in">
-
-                </div> -->
-
-                <div class="sec_background_btm container" data-aos="fade-right"></div>
             </div>
-            <!-- <div class="sec_position_btm_hidden ">
-                <div><img width="100%" src="./img/food1.jpg" alt=""></div>
-            </div> -->
         </div>
+
+    </section>
+    <section>
+        <div class="sec_background_btm ">
+            <div class="product_bg_B"></div>
         </div>
     </section>
-    <section class="card_container " id="card_container">
+    <section>
+        <div class="swiper-container container-fluid">
+            <div class="swiper_title">寓所小品</div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product1.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product2.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product3.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product4.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product1.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product2.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product3.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product4.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product1.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card ">
+                        <div class="card_title">商品名稱</div>
+                        <img width="100%" src="./img/sc_shop/product2.png" alt="">
+                        <div class="card_text">青山依舊在，幾度夕陽紅。慣看秋月春，風。一壺濁酒喜相逢，浪花淘盡英雄。</div>
+                        <div class="card_link">
+                            <span class="line-T"></span>
+                            <div>了解更多</div>
+                            <span class="line-B"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </section>
+    <!-- <section class="card_container " id="card_container">
         <div class="card_desk d-flex flex-wrap container">
             <div class="row d-flex justify-content-between">
+
                 <div class="card col-12  col-md-3 ">
                     <div class="card_title link hover-12">寓所小品</div>
                     <img width="100%" src="./img/sc_card1.jpg" alt="">
@@ -153,13 +496,12 @@
                         <span class="line-T"></span>
                         <div>了解更多</div>
                         <span class="line-B"></span>
-
                     </div>
 
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <footer>
         <div class="footer" id="footer">
             <div class="footer_top d-flex">
@@ -233,9 +575,39 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+    <!-- swiper -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- aos -->
+
+
     <script>
         AOS.init();
+        //aos
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 70,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+        // swiper
+        window.onscroll = function () {
+            console.log(document.documentElement.scrollTop);
+        }
+        // 監測滾軸位置
+
     </script>
 </body>
 
