@@ -23,14 +23,17 @@ body{
                 grid-column: 1 / 5;
             }
             .shimmer_logo{
-                width: 250px;
                 grid-row: 4;
                 grid-column: 3 / 5;
+                img{
+                    width: 200px;
+                }
             }
             .cy_logo{
                 grid-row: 2 / 4;
+                grid-column: 4;
                 img{
-                    width: 250px;
+                    width: 200px;
                 }
             }
         }
