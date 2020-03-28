@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=shop_store.css.map */
+body {
+  margin: 0;
+}
+
+.shop_store header .bg-color {
+  background-color: #1B2E29;
+  width: 100%;
+  height: 750px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (125px)[6];
+      grid-template-rows: repeat(6, 125px);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+}
+
+.shop_store header .bg-color .bg-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #78CCB6;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+}
+
+.shop_store header .bg-color .shimmer_logo {
+  width: 250px;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+.shop_store header .bg-color .cy_logo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+}
+
+.shop_store header .bg-color .cy_logo img {
+  width: 250px;
+}
+
+.shop_store main .products_list {
+  height: 200vh;
+  background-color: #78CCB6;
+}
+/*# sourceMappingURL=shop_store.css.map */

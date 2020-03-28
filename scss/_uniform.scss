@@ -11,11 +11,13 @@ $color5 : #270501;
 $color6 : #5e7467;
 
 @mixin text_content($font , $color) {
-    
+    font-size: $font1;
+    background-color: $color3;
 }
 
 @mixin bg-fix {
     background-size: cover;
     background-position: center;
 }
+
 

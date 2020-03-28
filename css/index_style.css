@@ -3,101 +3,6 @@ body {
   margin: 0;
 }
 
-body .nav_hamburger {
-  width: 100%;
-  position: fixed;
-  z-index: 5;
-}
-
-body .nav_hamburger .menu-toggle {
-  width: 40px;
-  height: 30px;
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  cursor: pointer;
-}
-
-body .nav_hamburger .menu-toggle.on .one {
-  -webkit-transform: rotate(45deg) translate(7px, 7px);
-          transform: rotate(45deg) translate(7px, 7px);
-}
-
-body .nav_hamburger .menu-toggle.on .two {
-  opacity: 0;
-}
-
-body .nav_hamburger .menu-toggle.on .three {
-  -webkit-transform: rotate(-45deg) translate(8px, -10px);
-          transform: rotate(-45deg) translate(8px, -10px);
-}
-
-body .nav_hamburger .one,
-body .nav_hamburger .two,
-body .nav_hamburger .three {
-  width: 100%;
-  height: 5px;
-  background: white;
-  margin: 6px auto;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body .nav_hamburger nav ul {
-  margin: 0;
-  padding: 0;
-  font-family: Open Sans;
-  list-style: none;
-  margin: 4em auto;
-  text-align: center;
-}
-
-body .nav_hamburger nav ul.hidden {
-  display: none;
-}
-
-body .nav_hamburger nav ul a {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  text-decoration: none;
-  color: white;
-  font-size: 3em;
-  line-height: 1.5;
-  width: 100%;
-  display: block;
-}
-
-body .nav_hamburger nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-body .nav_hamburger .menu-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-body .nav_hamburger .menu-section nav {
-  width: 100%;
-}
-
-body .nav_hamburger .menu-section.on {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-}
-
 body .cid-rTpW4eKEc3 {
   width: 100%;
   height: 100vh;
@@ -108,7 +13,6 @@ body .cid-rTpW4eKEc3 {
       -ms-flex-align: center;
           align-items: center;
   background-color: gray;
-  z-index: 4;
 }
 
 body .cid-rTpW4eKEc3 .mbr-figure {
