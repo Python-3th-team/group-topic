@@ -152,7 +152,6 @@ body {
 .shop_store main {
   background-color: #27423B;
   font-size: 20px;
-  line-height: 50px;
 }
 
 .shop_store main .products_list {
@@ -225,7 +224,7 @@ body {
 }
 
 .shop_store main .item .item_content .white_bar {
-  width: 100%;
+  width: 500px;
   border-radius: 10px;
   height: 2px;
   background-color: #fff;
@@ -236,11 +235,37 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop_store main .item .item_content .item_pay span {
+  line-height: 40px;
+  margin: 0 10px 0 0;
+  text-align: center;
 }
 
 .shop_store main .item .item_content .item_pay .qty {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 60px 1fr 30px 20px;
+      grid-template-columns: 60px 1fr 30px 20px;
+  -ms-grid-rows: 40px;
+      grid-template-rows: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop_store main .item .item_content .item_pay .qty .qty_input {
+  width: 100%;
+  height: 40px;
+  margin: 0 10px 0 0;
+}
+
+.shop_store main .item .item_content .item_pay .qty img {
+  width: 20px;
 }
 
 .shop_store main .item .item_content .btn {
