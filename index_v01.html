@@ -10,14 +10,14 @@
     <meta name="description" content="Web Site Builder Description">
 
     <title>index</title>
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="assets/tether/tether.min.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="preload" as="style" href=".css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
     <link rel="stylesheet" href="./css/index_style_v01.css">
@@ -40,19 +40,19 @@
             <nav class="main-nav">
                 <ul>
                     <li>
-                        <a href="#">
-                            About
+                        <a href="#cid-rTpW4eKEc3">
+                            關於我們
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            Pricing
+                        <a href="#white_section">
+                            交通位置
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
-                            Contact
+                        <a href="#pagetop_footer">
+                            聯絡我們
                         </a>
                     </li>
                 </ul>
@@ -62,15 +62,15 @@
                 <nav class="footer-nav">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/shimmercafetw/?ref=br_rs">
                                 <i class="fa fa-twitter fa-fw"></i>
-                                Twitter
+                                Facebook
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <i class="fa fa-envelope fa-fw"></i>
-                                Subscribe
+                                Twitter
                             </a>
                         </li>
                     </ul>
@@ -81,14 +81,14 @@
 
 
     </section>
-    <section class="cid-rTpW4eKEc3">
+    <section class="cid-rTpW4eKEc3" id= "cid-rTpW4eKEc3">
         <figure class="mbr-figure row">
             <div class="banner_plant">
                 <a href="sc_shop.html">
                     <div class="plant_logo"></div>
                     <div class="banner_mask">
                         <div class="banner_plantTitle">
-                            微光寓所
+                            千暘植務                            
                         </div>
                     </div>
                 </a>
@@ -98,14 +98,14 @@
                     <div class="restaurant_logo"></div>
                     <div class="banner_mask">
                         <div class="banner_restaurantTitle">
-                            千暘植務
+                            微光寓所
                         </div>
                     </div>
                 </a>
             </div>
         </figure>
     </section>
-    <section class="white_section">
+    <section class="white_section" id="white_section">
         <div class="white_container embed-responsive embed-responsive-16by9" id="map">
 
             <!-- <div class="poems_space">
@@ -169,10 +169,14 @@
         <div class="under_line"></div> -->
     </section>
     <section class=pagetop_footer>
-        <div class="footer_container">
+        <div class="footer_container" id="footer_container">
 
             <div class="footer_logo">
-                <img src="./img/plant_logo.png" alt="">
+                <img src="./img/cy_plant/cy_logo_big.png" alt="">
+            </div>
+           
+            <div class="footer_logo">
+                <img src="../img/sc_shop/sc_logo_big.png" alt="">
             </div>
             <div class="footer_contact">
 
@@ -229,6 +233,15 @@
             $('.mbr-section').toggle();
             $('.pagetop_footer').toggle();
         });
+        // $('.main-nav').click(function () {
+        //     $(this).toggle('active');
+        //     $('#menu').toggleClass('open');
+        //     $('.toggle-menu').toggle();
+        //     $('.mbr-section').toggle();
+        //     $('.pagetop_footer').toggle();
+        //     $('.cid-rTpW4eKEc3').toggle();
+           
+        // });
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
