@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
     <link rel="stylesheet" href="./css/index_style_v01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 
 </head>
@@ -49,9 +50,13 @@
                             交通位置
                         </a>
                     </li>
-
                     <li>
-                        <a href="#pagetop_footer">
+                        <a href="#">
+                            前往商店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer_container">
                             聯絡我們
                         </a>
                     </li>
@@ -62,15 +67,18 @@
                 <nav class="footer-nav">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/shimmercafetw/?ref=br_rs">
-                                <i class="fa fa-twitter fa-fw"></i>
-                                Facebook
+                            <a href="https://www.facebook.com/cyplantstore/?ref=br_rs">
+                                <i class="fa fa-twitter fa-fw fab fa-facebook-f"></i>
+                                千暘植務
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fa fa-envelope fa-fw"></i>
-                                Twitter
+                            <!-- <div class="FB_LOGO">
+                                <img src="../img/facebook_7.svg" alt="">
+                            </div> -->
+                            <a href="https://www.facebook.com/shimmercafetw/?ref=br_rs">
+                                <i class="fa fa-envelope fa-fw fab fa-facebook-f"></i>
+                                微光寓所
                             </a>
                         </li>
                     </ul>
@@ -81,14 +89,14 @@
 
 
     </section>
-    <section class="cid-rTpW4eKEc3" id= "cid-rTpW4eKEc3">
+    <section class="cid-rTpW4eKEc3" id="cid-rTpW4eKEc3">
         <figure class="mbr-figure row">
             <div class="banner_plant">
                 <a href="sc_shop.html">
                     <div class="plant_logo"></div>
                     <div class="banner_mask">
                         <div class="banner_plantTitle">
-                            千暘植務                            
+                            千暘植務
                         </div>
                     </div>
                 </a>
@@ -174,19 +182,22 @@
             <div class="footer_logo">
                 <img src="./img/cy_plant/cy_logo_big.png" alt="">
             </div>
-           
+
             <div class="footer_logo">
                 <img src="../img/sc_shop/sc_logo_big.png" alt="">
             </div>
             <div class="footer_contact">
 
                 <div class="social_media">
-                    <div class="fblogo">
-                        <!-- <img src="./img/fb.svg" alt=""> -->
-                    </div>
-                    <div class="iglogo">
-                        <!-- <img src="./img/insta.svg" alt=""> -->
-                    </div>
+                    <a href="https://www.facebook.com/shimmercafetw/">
+                        <div class="fblogo"></div>
+                    </a>
+
+                    <a href="https://www.instagram.com/shimmercafetw/">
+                        <div class="iglogo"></div>
+                    </a>
+
+
                 </div>
                 <div class="phpone">
                     <div class="phpone_number">
@@ -224,6 +235,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgTZ24YnGy-Sbo7euoeNh4aT5jjSZrFwQ&callback=initMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
     <script>
         $('.toggle-menu').click(function () {
@@ -233,15 +245,14 @@
             $('.mbr-section').toggle();
             $('.pagetop_footer').toggle();
         });
-        // $('.main-nav').click(function () {
-        //     $(this).toggle('active');
-        //     $('#menu').toggleClass('open');
-        //     $('.toggle-menu').toggle();
-        //     $('.mbr-section').toggle();
-        //     $('.pagetop_footer').toggle();
-        //     $('.cid-rTpW4eKEc3').toggle();
-           
-        // });
+        $('.main-nav').click(function () {
+            $('.toggle-menu').toggleClass('active');
+            $('#menu').toggleClass('open');
+            $('.mbr-section').toggle();
+            $('.pagetop_footer').toggle();
+            $('.cid-rTpW4eKEc3').toggle();
+
+        });
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -250,7 +261,7 @@
                     lat: 23.965973807059072,
                     lng: 120.97020570000001
                 },
-                
+
                 styles: [
                     {
                         "featureType": "all",
@@ -442,7 +453,7 @@
                     scale: 8
                 },
                 map: map
-                });
+            });
         }
 
     </script>
