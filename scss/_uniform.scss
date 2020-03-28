@@ -1,6 +1,21 @@
-$font1: 28px;
-$font2: 28px;
-$font3: 28px;
-$font4: 28px;
-$font4: 28px;
+$font1: 20px;
+$font2: 24px;
+$font3: 32px;
+$font4: 40px;
+
+$color1 : #FFFFFF;
+$color2 : #2f4f4f;
+$color3 : #DC143C;
+$color4 : #D4CB00;
+$color5 : #270501;
+$color6 : #5e7467;
+
+@mixin text_content($font , $color) {
+    
+}
+
+@mixin bg-fix {
+    background-size: cover;
+    background-position: center;
+}
 
