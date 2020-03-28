@@ -79,6 +79,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  opacity: 0.3;
 }
 
 .shop_store header .bg-color .shimmer_logo img {
@@ -122,8 +123,9 @@ body {
   -ms-grid-row: 5;
   grid-row: 5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1 / span 6;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / span 5;
+  width: 90%;
   position: relative;
 }
 
@@ -175,4 +177,24 @@ body {
 .shop_store main .products_list .product .product_img img {
   width: 100%;
 }
-/*# sourceMappingURL=shop_store.css.map */
+
+.shop_store main .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 50vh;
+      grid-template-rows: 50vh;
+  padding: 100px 0 0 0;
+}
+
+.shop_store main .item .item_img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop_store main .item .item_img img {
+  width: 80%;
+}
+/*# sourceMappingURL=cy_store.css.map */

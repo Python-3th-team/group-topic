@@ -22,11 +22,11 @@ body{
                 grid-column: 1 / 5;
             }
             .cy_logo{
-                // display: grid;
                 grid-row: 2 / 4;
                 grid-column: 4;
                 align-self: center;
                 z-index: 5;
+                opacity: 0.3;
                 img{
                     width: 200px;
                 }
@@ -59,7 +59,8 @@ body{
             .deco_line{
                 @include deco_line();
                 grid-row: 5;
-                grid-column: 1 / span 6;
+                grid-column: 1 / span 5;
+                width: 90%;
                 position: relative;
                 span{
                     position: absolute;
@@ -96,6 +97,5 @@ body{
                 }
             }
         }
-
     }
 }

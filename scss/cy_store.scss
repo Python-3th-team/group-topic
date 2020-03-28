@@ -42,6 +42,7 @@ body{
                 grid-column: 3 / 4;
                 z-index: 5;
                 align-self: center;
+                opacity: 0.3;
                 img{
                     width: 200px;
                     -webkit-filter: contrast(200%);
@@ -59,7 +60,8 @@ body{
             .deco_line{
                 @include deco_line();
                 grid-row: 5;
-                grid-column: 1 / span 6;
+                grid-column: 1 / span 5;
+                width: 90%;
                 position: relative;
                 span{
                     position: absolute;
@@ -96,6 +98,17 @@ body{
                 }
             }
         }
-
+        .item{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50vh;
+            padding: 100px 0 0 0;
+            .item_img{
+                justify-content: center;
+                img{
+                    width: 80%;
+                }
+            }
+        }
     }
 }
