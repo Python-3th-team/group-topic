@@ -22,7 +22,6 @@ body{
                 grid-column: 1 / 5;
             }
             .cy_logo{
-                // display: grid;
                 grid-row: 2 / 4;
                 grid-column: 4;
                 align-self: center;
@@ -102,11 +101,51 @@ body{
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 50vh;
-            padding: 100px 0 0 0;
+            padding: 80px 0 0 0;
+            color: $color4;
             .item_img{
-                justify-content: center;
-                img{
+                align-self: center;
+                padding: 0 10px;
+                .img{
+                    justify-content: center;
                     width: 80%;
+                    img{
+                        display: grid;
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+            .item_content{
+                display: grid;
+                grid-template-rows: 5px 60px 60px 5px 60px 1fr 5px 80px 5px 1fr;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .white_bar{
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 2px;
+                    background-color: $color4;
+                }
+                .item_pay{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    .qty{
+                        display: grid;
+                        
+                    }
+
+                }
+                .btn{
+                    width: 200px;
+                    height: 50px;
+                    justify-self: center;
+                    background-color: $color2;
+                    border: none;
+                    &:hover{
+                        opacity: 0.8;
+                    }
                 }
             }
         }

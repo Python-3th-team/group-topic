@@ -185,16 +185,74 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 50vh;
       grid-template-rows: 50vh;
-  padding: 100px 0 0 0;
+  padding: 80px 0 0 0;
+  color: #fff;
 }
 
 .shop_store main .item .item_img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 10px;
+}
+
+.shop_store main .item .item_img .img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 80%;
 }
 
-.shop_store main .item .item_img img {
-  width: 80%;
+.shop_store main .item .item_img .img img {
+  display: -ms-grid;
+  display: grid;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.shop_store main .item .item_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5px 60px 60px 5px 60px 1fr 5px 80px 5px 1fr;
+      grid-template-rows: 5px 60px 60px 5px 60px 1fr 5px 80px 5px 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.shop_store main .item .item_content .white_bar {
+  width: 100%;
+  border-radius: 10px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.shop_store main .item .item_content .item_pay {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.shop_store main .item .item_content .item_pay .qty {
+  display: -ms-grid;
+  display: grid;
+}
+
+.shop_store main .item .item_content .btn {
+  width: 200px;
+  height: 50px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #78CCB6;
+  border: none;
+}
+
+.shop_store main .item .item_content .btn:hover {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=cy_store.css.map */
