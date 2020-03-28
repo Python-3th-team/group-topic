@@ -105,16 +105,10 @@ body header .banner .navbar .nav_container a .cy_logo {
   width: 255px;
 }
 
-body header .banner .calendar_container {
-  width: 100%;
-}
-
 body header .banner .calendar_container .calendar {
   width: 50%;
-  opacity: 0.4;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -129,27 +123,29 @@ body header .banner .calendar_container .calendar {
   }
 }
 
-body header .banner .calendar_container .calendar:hover {
+body header .banner .calendar_container .calendar img {
+  width: 100%;
+  -webkit-transform: translate(0, 195px);
+          transform: translate(0, 195px);
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+body header .banner .calendar_container .calendar img:hover {
   opacity: 0.8;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body header .banner .calendar_container .calendar:active {
+body header .banner .calendar_container .calendar img:active {
   opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body header .banner .calendar_container .calendar img {
-  width: 100%;
-  -webkit-transform: translate(0, 195px);
-          transform: translate(0, 195px);
-}
-
 body .news_container {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +155,7 @@ body .news_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 body .news_container .news_content {
@@ -188,7 +184,7 @@ body .news_container .news_content .news_title_btm {
 
 body .news_container .news_content .news_title_btm .news_inner_content {
   font-size: 20px;
-  border-bottom: 2px #092B00 solid;
+  border-bottom: 2px #092b00 solid;
   letter-spacing: 5px;
   cursor: pointer;
   padding: 22.5px 0;
@@ -203,7 +199,7 @@ body .news_container .news_content .news_title_btm .news_inner_content div:nth-c
 }
 
 body .news_container .news_content .news_title_btm .news_inner_content .date_style {
-  color: #49804C;
+  color: #49804c;
 }
 
 body .news_container .news_content .news_title_btm .news_inner_content .news_list {
@@ -314,7 +310,7 @@ body .container-fluid {
 }
 
 body .menu_bg {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   padding: 135px 0;
 }
@@ -356,7 +352,7 @@ body .menu_bg .menu .menuitem {
 }
 
 body .menu_bg .menu .menuitem .text {
-  background-color: #E3E4E8;
+  background-color: #e3e4e8;
   position: absolute;
   bottom: calc(50% - 270px);
   width: 540px;
@@ -401,7 +397,7 @@ body .menu_bg .menu .menuitem .text {
 }
 
 body .menu_bg .menu .menuitem .text h4 {
-  color: #66C302;
+  color: #66c302;
   font-size: 30px;
   padding-top: 10px;
 }
@@ -419,7 +415,7 @@ body .menu_bg .menu .menuitem .text h4 {
 }
 
 body .menu_bg .menu .menuitem .text p {
-  color: #092B00;
+  color: #092b00;
   font-size: 20px;
   padding-top: 10px;
   margin: 0;
@@ -495,13 +491,13 @@ body .swiper-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-bottom: 150px;
 }
 
 body .swiper-container .swiper_title {
   font-size: 30px;
-  color: #56380C;
+  color: #56380c;
   padding: 75px 0;
 }
 
@@ -524,18 +520,18 @@ body .swiper-container .swiper-slide {
 
 body .swiper-container .swiper-slide .card {
   width: 100%;
-  background-color: #E3E4E8;
+  background-color: #e3e4e8;
 }
 
 body .swiper-container .swiper-slide .card .card_title {
-  color: #66C302;
+  color: #66c302;
   font-size: 30px;
   padding: 5% 10%;
   margin: auto;
 }
 
 body .swiper-container .swiper-slide .card .card_text {
-  color: #092B00;
+  color: #092b00;
   font-size: 20px;
   padding: 5% 15%;
 }
