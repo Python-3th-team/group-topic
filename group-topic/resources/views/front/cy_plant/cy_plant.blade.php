@@ -21,8 +21,6 @@
 @endsection
 
 @section('content')
-
-
     <header>
         <div class="banner drop-shadow d-flex flex-column">
 

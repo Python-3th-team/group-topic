@@ -19,6 +19,18 @@ class FrontController extends Controller
     {
         return view('front/cy_plant/cy_plant');
     }
+    public function shop_store()
+    {
+        return view('front/shop_store');
+    }
+    public function cy_store()
+    {
+        return view('front/cy_plant/cy_store');
+    }
+    public function sc_store()
+    {
+        return view('front/sc_shop/sc_store');
+    }
 
     // public function sc_shop(){
     //     $news_data = News::all();

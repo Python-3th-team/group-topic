@@ -15,7 +15,7 @@
                 </button>
             </nav>
         </header>
-        
+
         <div id="menu" class="">
             <nav class="main-nav">
                 <ul>
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./shop_store.html">
+                        <a href="./shop_store">
                             前往商店
                         </a>
                     </li>
