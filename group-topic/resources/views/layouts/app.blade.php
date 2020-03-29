@@ -52,10 +52,10 @@
                                 <a class="dropdown-item" href="">
                                     最新消息
                                 </a>
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/home/sc_product_type">
                                     商品類型
                                 </a>
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/home/sc_product_list">
                                     管理商品
                                 </a>
                             </div>
@@ -76,10 +76,10 @@
                                 <a class="dropdown-item" href="">
                                     最新消息
                                 </a>
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/home/cy_product_type">
                                     商品類型
                                 </a>
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/home/cy_product_list">
                                     管理商品
                                 </a>
                             </div>

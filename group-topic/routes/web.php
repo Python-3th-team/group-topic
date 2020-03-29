@@ -74,6 +74,71 @@ Route::group(['middleware' => ['auth'], 'prefix' => '/home'], function () {
     Route::post('/productType/update/{id}', 'ProductTypeController@update');
 
     Route::post('/productType/delete/{id}', 'ProductTypeController@delete');
+
+
+
+
+    // 微光商品類型管理
+    Route::group(['prefix' => 'sc_product_type'], function () {
+    // 新增
+    Route::get('/', 'ScTypeController@index');
+    Route::get('/create', 'ScTypeController@create');
+    // 編輯
+    Route::post('/store', 'ScTypeController@store');
+    Route::get('/edit/{id}', 'ScTypeController@edit');
+    Route::post('/update/{id}', 'ScTypeController@update');
+    Route::post('/delete/{id}', 'ScTypeController@destroy');
+    });
+
+    // 千暘商品類型管理
+    Route::group(['prefix' => 'cy_product_type'], function () {
+        // 新增
+        Route::get('/', 'CyTypeController@index');
+        Route::get('/create', 'CyTypeController@create');
+        // 編輯
+        Route::post('/store', 'CyTypeController@store');
+        Route::get('/edit/{id}', 'CyTypeController@edit');
+        Route::post('/update/{id}', 'CyTypeController@update');
+        Route::post('/delete/{id}', 'CyTypeController@destroy');
+        });
+
+    // 微光商品類型管理
+    Route::group(['prefix' => 'sc_product_list'], function () {
+    // 新增
+    Route::get('/', 'ScProductController@index');
+    Route::get('/create', 'ScProductController@create');
+    // 編輯
+    Route::post('/store', 'ScProductController@store');
+    Route::get('/edit/{id}', 'ScProductController@edit');
+    Route::post('/update/{id}', 'ScProductController@update');
+    Route::post('/delete/{id}', 'ScProductController@destroy');
+    });
+
+    // 千暘商品類型管理
+    Route::group(['prefix' => 'cy_product_list'], function () {
+        // 新增
+        Route::get('/', 'CyProductController@index');
+        Route::get('/create', 'CyProductController@create');
+        // 編輯
+        Route::post('/store', 'CyProductController@store');
+        Route::get('/edit/{id}', 'CyProductController@edit');
+        Route::post('/update/{id}', 'CyProductController@update');
+        Route::post('/delete/{id}', 'CyProductController@destroy');
+        });
+
+
+
+
+
+    // summernote ImgUpload
+    Route::post('/ajax_upload_img', 'ImgUploadController@ajax_upload_img');
+    Route::post('/ajax_delete_img', 'ImgUploadController@ajax_delete_img');
+
+
+
+
+
+
 });
 
 
