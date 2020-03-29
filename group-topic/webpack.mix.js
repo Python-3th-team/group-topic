@@ -12,4 +12,15 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+//    .sass('resources/sass/app.scss', 'public/css');
+// .sass('resources/sass/footer.scss', 'public/css');
+
+    // .sass('resources/sass/index.scss', 'public/css')
+    .sass('resources/sass/sc_shop.scss', 'public/css')
+    // .sass('resources/sass/shop_store.scss', 'public/css')
+    // .sass('resources/sass/cy_plant.scss', 'public/css')
+    // .sass('resources/sass/sc_store.scss', 'public/css')
+    // .sass('resources/sass/cy_store.scss', 'public/css')
+    // .sass('resources/sass/cy_product.scss', 'public/css')
+
+

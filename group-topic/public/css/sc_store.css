@@ -24,6 +24,7 @@ body {
   grid-column: 4;
   align-self: center;
   z-index: 5;
+  opacity: 0.3;
 }
 
 .shop_store header .bg-color .cy_logo img {
@@ -88,7 +89,8 @@ body {
   border-radius: 5px;
   background-color: #fff;
   grid-row: 5;
-  grid-column: 1/span 6;
+  grid-column: 1/span 5;
+  width: 90%;
   position: relative;
 }
 

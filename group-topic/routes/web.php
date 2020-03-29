@@ -18,9 +18,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('nav');
 // });
 Route::get('/' , 'FrontController@index');
-
 Route::get('/sc_shop' , 'FrontController@sc_shop');
-Route::get('/sc_shop_detail/{id}', 'FrontController@sc_shop_detail');
+Route::get('/cy_plant' , 'FrontController@cy_plant');
+
+
+
+// Route::get('/sc_shop' , 'FrontController@sc_shop');
+// Route::get('/sc_shop_detail/{id}', 'FrontController@sc_shop_detail');
 
 Route::get('/products' , 'FrontController@products');
 Route::get('/products_detail/{id}', 'FrontController@products_detail');
