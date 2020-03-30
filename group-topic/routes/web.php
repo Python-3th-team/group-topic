@@ -35,45 +35,57 @@ Route::get('/products_detail/{id}', 'FrontController@products_detail');
 Auth::routes();
 Route::group(['middleware' => ['auth'], 'prefix' => '/home'], function () {
     //最新消息
+    //微光最新消息
     Route::get('/', 'HomeController@index');
 
-    Route::get('/news', 'NewsController@index');
+    Route::get('/sc_shop/sc_news', 'Sc_NewsController@index');
 
-    Route::get('/news/create', 'NewsController@create');
+    Route::get('/sc_shop/sc_news/create', 'Sc_NewsController@create');
+    Route::post('/sc_shop/sc_news/store', 'Sc_NewsController@store');
 
-    Route::post('/news/store', 'NewsController@store');
+    Route::get('/sc_shop/sc_news/edit/{id}', 'Sc_NewsController@edit');
+    Route::post('/sc_shop/sc_news/update/{id}', 'Sc_NewsController@update');
 
-    Route::get('/news/edit/{id}', 'NewsController@edit');
+    Route::post('/sc_shop/sc_news/delete/{id}', 'Sc_NewsController@delete');
 
-    Route::post('/news/update/{id}', 'NewsController@update');
+    //千暘最新消息
+    Route::get('/', 'HomeController@index');
 
-    Route::post('/news/delete/{id}', 'NewsController@delete');
+    Route::get('/cy_plant/cy_news', 'Cy_NewsController@index');
+
+    Route::get('/cy_plant/cy_news/create', 'Cy_NewsController@create');
+    Route::post('/cy_plant/cy_news/store', 'Cy_NewsController@store');
+
+    Route::get('/cy_plant/cy_news/edit/{id}', 'Cy_NewsController@edit');
+    Route::post('/cy_plant/cy_news/update/{id}', 'Cy_NewsController@update');
+
+    Route::post('/cy_plant/cy_news/delete/{id}', 'Cy_NewsController@delete');
 
     //產品管理
-    Route::get('products','ProductsController@index');
+    // Route::get('products','ProductsController@index');
 
-    Route::get('products/create','ProductsController@create');
+    // Route::get('products/create','ProductsController@create');
 
-    Route::post('products/store','ProductsController@store');
+    // Route::post('products/store','ProductsController@store');
 
-    Route::get('products/edit/{id}','ProductsController@edit');
+    // Route::get('products/edit/{id}','ProductsController@edit');
 
-    Route::post('products/update/{id}','ProductsController@update');
+    // Route::post('products/update/{id}','ProductsController@update');
 
-    Route::post('products/delete/{id}','ProductsController@delete');
+    // Route::post('products/delete/{id}','ProductsController@delete');
 
     //產品類型管理
-    Route::get('/productType', 'ProductTypeController@index');
+    // Route::get('/productType', 'ProductTypeController@index');
 
-    Route::get('/productType/create', 'ProductTypeController@create');
+    // Route::get('/productType/create', 'ProductTypeController@create');
 
-    Route::post('/productType/store', 'ProductTypeController@store');
+    // Route::post('/productType/store', 'ProductTypeController@store');
 
-    Route::get('/productType/edit/{id}', 'ProductTypeController@edit');
+    // Route::get('/productType/edit/{id}', 'ProductTypeController@edit');
 
-    Route::post('/productType/update/{id}', 'ProductTypeController@update');
+    // Route::post('/productType/update/{id}', 'ProductTypeController@update');
 
-    Route::post('/productType/delete/{id}', 'ProductTypeController@delete');
+    // Route::post('/productType/delete/{id}', 'ProductTypeController@delete');
 
 
 

@@ -82,6 +82,34 @@
                 <div class="news_content">
                     <div class="news_title">情報更新</div>
                     <div class="news_title_btm">
+
+                        <thead>
+                            @foreach ($news_data as $item)
+                            <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter{{$item->id}}">
+
+                                <div>{{$item->date}}</div>
+                                <div class="news_list">{{$item->title}}</div>
+                                <div >▶</div>
+                            </div>
+                            <div class="modal fade" id="exampleModalCenter{{$item->id}}" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <img width="100%" src="{{$item->img}}" alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div data-dismiss="modal">Close</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </thead>
+
+
+                        </div>
+                    {{-- <div class="news_title_btm">
                         <div class="news_inner_content d-flex" data-toggle="modal" data-target="#exampleModalCenter">
                             <div class="date_style">
                                 2020/03/26
@@ -132,14 +160,14 @@
                             </div>
                             <div>▶</div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="news_link">
                         <span class="line-T"></span>
                         <div class="text" data-toggle="modal" data-target="#exampleModalCenter5">查看更多</div>
                         <span class="line-B"></span>
                     </div>
                 </div>
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
+                {{-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-body">
@@ -233,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
         </div>

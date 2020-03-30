@@ -49,7 +49,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/home/sc_shop/sc_news">
                                     最新消息
                                 </a>
                                 <a class="dropdown-item" href="/home/sc_product_type">
@@ -73,7 +73,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/home/cy_plant/cy_news">
                                     最新消息
                                 </a>
                                 <a class="dropdown-item" href="/home/cy_product_type">

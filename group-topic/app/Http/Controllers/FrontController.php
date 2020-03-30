@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\News;
+use App\Cy_News;
+use App\Sc_News;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -13,11 +15,13 @@ class FrontController extends Controller
 
     public function sc_shop()
     {
-        return view('front/sc_shop/sc_shop');
+        $news_data = Sc_News::all();
+        return view('front/sc_shop/sc_shop' , compact('news_data'));
     }
     public function cy_plant()
     {
-        return view('front/cy_plant/cy_plant');
+        $news_data = Cy_News::all();
+        return view('front/cy_plant/cy_plant' , compact('news_data'));
     }
     public function shop_store()
     {
