@@ -69,7 +69,7 @@
     <section class="cid-rTpW4eKEc3" id="cid-rTpW4eKEc3">
         <figure class="mbr-figure row">
             <div class="banner_plant">
-                <a href="/sc_shop">
+                <a href="/cy_plant">
                     <div class="plant_logo"></div>
                     <div class="banner_mask">
                         <div class="banner_plantTitle">
@@ -79,7 +79,7 @@
                 </a>
             </div>
             <div class="banner_restaurant">
-                <a href="/cy_plant">
+                <a href="/sc_shop">
                     <div class="restaurant_logo"></div>
                     <div class="banner_mask">
                         <div class="banner_restaurantTitle">

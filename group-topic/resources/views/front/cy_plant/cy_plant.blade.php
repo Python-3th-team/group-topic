@@ -96,7 +96,15 @@
                                     <div class="modal-content">
 
                                         <div class="modal-body">
+                                            <span>{{$item->date}}</span>
+                                            <hr>
                                             <img width="100%" src="{{$item->img}}" alt="">
+                                            <hr>
+                                            <span>活動項目：{{$item->title}}</span>
+                                            <br>
+                                            <span>活動時間：{{$item->txtdate}}</span>
+                                            <br>
+                                            <span>活動內容：{{$item->content}}</span>
                                         </div>
                                         <div class="modal-footer">
                                             <div data-dismiss="modal">Close</div>

@@ -38,7 +38,7 @@
             </div>
 
             <div class="footer_logo">
-                <a href="sc_shop"><img src="{{asset('/img/sc_shop/sc_logo_big.png')}}" alt=""></a>
+                <a href="/sc_shop"><img src="{{asset('/img/sc_shop/sc_logo_big.png')}}" alt=""></a>
             </div>
             <div class="footer_contact">
 
@@ -68,7 +68,7 @@
             </div>
             <div class="white_line"></div>
             <div class="footer_copyright">
-                COPYRIGHT ©2020 KIDORI ALLRIGHTS RESERVED.
+                COPYRIGHT ©2020 中興大學Python職訓班 ALLRIGHTS RESERVED.
             </div>
         </div>
     </section>
