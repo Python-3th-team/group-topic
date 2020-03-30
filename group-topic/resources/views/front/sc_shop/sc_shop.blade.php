@@ -167,101 +167,7 @@
                             <span class="line-B"></span>
                         </div>
                     </div>
-                    {{-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img width="100%" src="/img/12697103_1710341725868053_7700827126521991776_o.jpg" alt="">
-                                </div>
-                                <div class="modal-footer">
-                                    <div data-dismiss="modal">Close</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img width="100%" src="/img/sc_shop/news1.jpg" alt="">
-                                </div>
-                                <div class="modal-footer">
-                                    <div data-dismiss="modal">Close</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img width="100%" src="/img/sc_shop/news2.jpg" alt="">
-                                </div>
-                                <div class="modal-footer">
-                                    <div data-dismiss="modal">Close</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img width="100%" src="/img/sc_shop/news3.jpg" alt="">
-                                </div>
-                                <div class="modal-footer">
-                                    <div data-dismiss="modal">Close</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img width="100%" src="/img/sc_shop/news4.jpg" alt="">
-                                </div>
-                                <div class="modal-footer">
-                                    <div data-dismiss="modal">Close</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <p>2020/03/26
-                                        青山依舊在，幾度。一壺濁酒喜相逢，浪花淘。
-                                    </p>
-                                    <p>2020/03/22
-                                        獨坐幽篁裏，彈琴復長嘯。
-                                        深林人不知，明月來相照。
-                                    </p>
-                                    <p>2020/03/20
-                                        君自故鄉來，應知故鄉事。
-                                        來日綺窗前，寒梅著花未？
-                                    </p>
-                                    <p>2020/03/20
-                                        寒雨連江夜入吳，平明送客楚山孤。
-                                        洛陽親友如相問，一片冰心在玉壺。
-                                    </p>
-                                    <p>2020/03/11
-                                        前不見古人，後不見來者。
-                                        念天地之悠悠，獨愴然而涕下。
-                                    </p>
-                                    <p>2020/03/06
-                                        獨在異鄉爲異客，每逢佳節倍思親。
-                                        遙知兄弟登高處，遍插茱萸少一人。
-                                    </p>
 
-                                </div>
-                                <div class="modal-footer">
-                                    <div data-dismiss="modal">Close</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
 
             </div>
@@ -280,13 +186,15 @@
                         <img width="100%" src="./img/sc_shop/food_1.png" alt="">
                     </div>
                     <div class=" text" data-aos="fade-left">
-                        <h4>開放式三明治 Open-Faced Sandwich</h4>
-                        <p>細磨全麥麵粉搭配自陪葡萄酵母製成高纖麵包，健康好消化</p>
-                        <div class="wrapMenu">
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                        <div class="text_bg">
+                            <h4>開放式三明治 Open-Faced Sandwich</h4>
+                            <p>細磨全麥麵粉搭配自陪葡萄酵母製成高纖麵包，健康好消化</p>
+                            <div class="wrapMenu">
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -295,25 +203,27 @@
                         <img width="100%" src="./img/sc_shop/food_1.png" alt="">
                     </div>
                     <div class=" text">
-                        <h4>開放式三明治 Open-Faced Sandwich</h4>
-                        <p>細磨全麥麵粉搭配自陪葡萄酵母製成高纖麵包，健康好消化</p>
-                        <div class="wrapMenu">
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                        <div class="text_bg">
+                            <h4>開放式三明治 Open-Faced Sandwich</h4>
+                            <p>細磨全麥麵粉搭配自陪葡萄酵母製成高纖麵包，健康好消化</p>
+                            <div class="wrapMenu">
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -322,13 +232,15 @@
                         <img width="100%" src="./img/sc_shop/food_1.png" alt="">
                     </div>
                     <div class=" text">
-                        <h4>開放式三明治 Open-Faced Sandwich</h4>
-                        <p>細磨全麥麵粉搭配自陪葡萄酵母製成高纖麵包，健康好消化</p>
-                        <div class="wrapMenu">
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
-                            <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                        <div class="text_bg">
+                            <h4>開放式三明治 Open-Faced Sandwich</h4>
+                            <p>細磨全麥麵粉搭配自陪葡萄酵母製成高纖麵包，健康好消化</p>
+                            <div class="wrapMenu">
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                                <p>180&emsp;烘烤番茄&emsp;&emsp;</p>
+                            </div>
                         </div>
                     </div>
                 </div>
