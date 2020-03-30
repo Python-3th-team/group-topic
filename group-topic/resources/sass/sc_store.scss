@@ -84,15 +84,90 @@ body{
         .products_list{
             display: grid;
             grid-template-columns: repeat(3 , 1fr);
-            grid-template-rows: repeat(3 , 420px);
+            // grid-template-rows: repeat(3 , 420px);
             grid-column-gap: 25px;
             padding: 50px 0 0 0;
             .product{
                 color: $color4;
+                margin: 20px 0 10px 0;
+                display: grid;
+                justify-content: center;
+                text-align: center;
                 .product_img{
                     margin: 0 0 20px 0;
                     img{
                         width: 100%;
+                    }
+                }
+            }
+        }
+        .item{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            // grid-template-rows: ;
+            padding: 100px 0;
+            color: $color4;
+            .item_img{
+                align-self: center;
+                padding: 0 10px;
+                .img{
+                    justify-content: center;
+                    width: 80%;
+                    img{
+                        display: grid;
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+            .item_content{
+                display: grid;
+                grid-template-rows: 5px 60px 60px 5px 60px 1fr 5px 80px 5px 1fr;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .white_bar{
+                    width: 500px;
+                    border-radius: 10px;
+                    height: 2px;
+                    background-color: $color4;
+                }
+                .item_pay{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+
+                    // line-height: 20px;
+                    span{
+                        line-height: 40px;
+                        margin: 0 10px 0 0;
+                        text-align: center;
+
+                    }
+                    .qty{
+                        display: grid;
+                        grid-template-columns: 60px 1fr 30px 20px;
+                        grid-template-rows: 40px;
+                        align-items: center;
+                        .qty_input{
+                            width: 100%;
+                            height: 40px;
+                            margin: 0 10px 0 0;
+                        }
+                        img{
+                            width: 20px;
+                        }
+                    }
+
+                }
+                .btn{
+                    width: 200px;
+                    height: 50px;
+                    justify-self: center;
+                    background-color: $color2;
+                    border: none;
+                    &:hover{
+                        opacity: 0.8;
                     }
                 }
             }

@@ -49643,10 +49643,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/sass/sc_shop.scss":
-/*!*************************************!*\
-  !*** ./resources/sass/sc_shop.scss ***!
-  \*************************************/
+/***/ "./resources/sass/cy_store.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/cy_store.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49655,14 +49655,14 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/sc_shop.scss ***!
-  \*****************************************************************/
+/*!******************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/cy_store.scss ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\Yida\Documents\GitHub\group-topic\group-topic\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Yida\Documents\GitHub\group-topic\group-topic\resources\sass\sc_shop.scss */"./resources/sass/sc_shop.scss");
+module.exports = __webpack_require__(/*! C:\Users\Yida\Documents\GitHub\group-topic\group-topic\resources\sass\cy_store.scss */"./resources/sass/cy_store.scss");
 
 
 /***/ })
