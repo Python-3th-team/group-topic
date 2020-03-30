@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="{{asset('assets/dropdown/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/theme/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/mobirise/css/mbr-additional.css')}}" type="text/css">
-    <link rel="preload" as="style" href=".css">
     <link rel="stylesheet" href="{{asset('css/footer.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
@@ -84,8 +83,7 @@
     <script src="{{asset('assets/mbr-tabs/mbr-tabs.js')}}"></script>
     <script src="{{asset('assets/theme/js/script.js')}}"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgTZ24YnGy-Sbo7euoeNh4aT5jjSZrFwQ&callback=initMap"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
     @yield('js')

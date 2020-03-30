@@ -17,9 +17,8 @@
     <!-- aos.js -->
     <link rel="stylesheet" href="{{asset('css/sc_shop.css')}}">
 
-    @endsection
+@endsection
 
-<body>
 
 @section('content')
 

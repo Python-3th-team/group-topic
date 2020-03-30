@@ -119,7 +119,8 @@
             $('.cid-rTpW4eKEc3').toggle();
 
         });
-
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgTZ24YnGy-Sbo7euoeNh4aT5jjSZrFwQ&callback=initMap"></script>
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 15,
