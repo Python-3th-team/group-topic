@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\News;
 use App\Cy_News;
 use App\Sc_News;
+use App\CyProduct;
+use App\ScProduct;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -29,11 +31,19 @@ class FrontController extends Controller
     }
     public function cy_store()
     {
-        return view('front/cy_plant/cy_store');
+        $products = CyProduct::all()->sortByDesc('sort');
+        return view('front/cy_plant/cy_store' , compact('products'));
     }
     public function sc_store()
     {
-        return view('front/sc_shop/sc_store');
+        $products = ScProduct::all()->sortByDesc('sort');
+
+        return view('front/sc_shop/sc_store' , compact('products'));
+    }
+
+    public function cy_store_item()
+    {
+        return view('front/cy_plant/cy_store_item');
     }
 
     // public function sc_shop(){

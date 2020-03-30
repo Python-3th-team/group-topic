@@ -23,6 +23,7 @@ Route::get('/cy_plant' , 'FrontController@cy_plant');
 Route::get('/shop_store' , 'FrontController@shop_store');
 Route::get('/cy_store' , 'FrontController@cy_store');
 Route::get('/sc_store' , 'FrontController@sc_store');
+Route::get('/cy_store_item' , 'FrontController@cy_store_item');
 
 
 // Route::get('/sc_shop' , 'FrontController@sc_shop');

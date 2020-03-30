@@ -43,123 +43,22 @@
     </header>
     <main>
         <div class="products_list container">
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
+            @foreach ($products as $item)
+                <div class="product">
+                    <div class="product_img">
+                        <a href="/cy_store_item">
+                            <img src="{{asset('/storage/'.$item->img)}}" alt="">
+                        </a>
+                    </div>
+                    <div class="product_title">
+                        <span>{{$item->title}}</span>
+                    </div>
+                    <div class="product_price">
+                        {{$item->price}}元
+                    </div>
                 </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_img">
-                    <a href="/cy_store_item">
-                        <img src="./img/cy_plant/product1.png" alt="">
-                    </a>
-                </div>
-                <div class="product_title">
-                    <span>乾燥花</span>
-                </div>
-                <div class="product_price">
-                    5000元
-                </div>
-            </div>
+            @endforeach
+
         </div>
     </main>
 </div>
