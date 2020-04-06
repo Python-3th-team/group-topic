@@ -44,30 +44,32 @@
             <div class="item container">
                 <div class="item_img">
                     <div class="img">
-                        <img src="./img/cy_plant/product1.png" alt="">
+                        <img src="{{asset('/storage/'.$product->img)}}" alt="">
+                        {{-- <img src="/stroage/.{{$product->img}}" alt=""> --}}
                     </div>
                 </div>
                 <div class="item_content">
                     <div class="white_bar"></div>
                     <span>品名</span>
-                    <span class="product_title">乾燥花</span>
+                    <span class="product_title">{{$product->title}}</span>
                     <div class="white_bar"></div>
                     <span>介紹</span>
-                    <span class="item_intro">可存放長久時間</span>
+                    <span class="item_intro">{!!$product->content!!}</span>
                     <div class="white_bar"></div>
                     <div class="item_pay">
                         <div class="qty">
                             <span>數量</span>
+                            {{-- <input type="number" class=".qty_input" value="1" min="0"> --}}
                             <span class=".qty_input">10</span>
                             <span>個</span>
                             <div class="arrow">
-                                <img src="./img/shop_store/up-arrow.svg" alt="">
-                                <img src="./img/shop_store/down-arrow.svg" alt="">
+                                <img src="{{asset('img/shop_store/up-arrow.svg')}}" alt="">
+                                <img src="{{asset('img/shop_store/down-arrow.svg')}}" alt="">
                             </div>
                         </div>
                         <div class="price">
                             <span>單價</span>
-                            <span>5000 元</span>
+                            <span>{{$product->price}}元</span>
                         </div>
                     </div>
                     <div class="white_bar"></div>

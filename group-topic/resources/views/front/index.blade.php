@@ -99,6 +99,7 @@
             <i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i>
         </a>
     </div>
+    @endsection
 
 
     @section('js')

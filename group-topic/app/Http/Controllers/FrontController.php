@@ -41,9 +41,10 @@ class FrontController extends Controller
         return view('front/sc_shop/sc_store' , compact('products'));
     }
 
-    public function cy_store_item()
+    public function cy_store_item($item_id)
     {
-        return view('front/cy_plant/cy_store_item');
+        $product = CyProduct::find($item_id);
+        return view('front/cy_plant/cy_store_item' , compact('product'));
     }
 
     // public function sc_shop(){

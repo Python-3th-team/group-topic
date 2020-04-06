@@ -46,7 +46,7 @@
             @foreach ($products as $item)
                 <div class="product">
                     <div class="product_img">
-                        <a href="/cy_store_item">
+                        <a href="/cy_store_item/{{$item->id}}">
                             <img src="{{asset('/storage/'.$item->img)}}" alt="">
                         </a>
                     </div>
